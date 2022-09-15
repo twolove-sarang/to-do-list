@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  background-color: blanchedalmond;
+}
+
+.container{
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 3em;
+  color: teal;
+  font-family: 'GmarketSansMedium';
+}
+
+#input-type{
+  display: flex;
+}
+
+
+/* 가운데로 옮기고 싶어요ㅠㅠ */
+.input-type #todo-type{
+  background-color: white;
+  border-radius: 10px;
+  border: 0px;
+  width: 20em;
+  padding: 4px;
+}
+
+.input-type #button-type{
+  background-color: teal;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 0px;
+  padding: 4px;
+}
+
+#tab{
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+#tab div{
+  margin: 1em;
+  cursor: pointer;
+  padding: 6px;
+}
+
+#tab div:hover{
+  background-color: azure;
+  padding: 6px;
+  border-radius: 30px;
+}
+
+/* #tab div:checked{
+  background-color: tomato;
+} */
+
+.set-list{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed black;
+  padding: 10px;
+}
+
+.set-list button:first-child{
+  padding: 5px;
+  background-color: beige;
+  border-radius: 5px;
+}
+
+.set-list button:nth-child(2){
+  padding: 5px;
+  background-color: tomato;
+  border-radius: 5px;
+}
+
+.set-list button:hover{
+  background-color: thistle;
+}
+
+.line-through{
+  text-decoration: line-through;
+}

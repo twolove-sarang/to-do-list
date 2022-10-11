@@ -1,95 +1,128 @@
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-*{
+* {
   padding: 0px;
   margin: 0px;
-  background-color: blanchedalmond;
 }
 
-.container{
-  height: 100vh;
+.container {
+  border-radius: 20px;
+  height: 100%;
+  width: 500px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
+
 
 h1 {
   text-align: center;
   padding: 20px;
-  font-size: 3em;
+  padding-top: 40px;
+  font-size: 2em;
   color: teal;
-  font-family: 'GmarketSansMedium';
+  font-family: "GmarketSansMedium";
+  margin-top: 40px;
 }
 
-#input-type{
+.input-type {
   display: flex;
+  justify-content: center;
 }
 
-
-/* 가운데로 옮기고 싶어요ㅠㅠ */
-.input-type #todo-type{
-  background-color: white;
-  border-radius: 10px;
+.input-type #todo-type {
+  background-color: #f2f2f2;
+  border-radius: 15px;
   border: 0px;
   width: 20em;
-  padding: 4px;
+  padding: 10px;
 }
 
-.input-type #button-type{
+.input-type #button-type {
   background-color: teal;
   color: white;
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 0px;
-  padding: 4px;
+  padding: 10px;
+  margin-left: 5px;
 }
 
-#tab{
+.input-type #button-type:active{
+  background-color: coral;
+}
+
+#tab {
   display: flex;
+  justify-content: center;
   border-bottom: 1px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-#tab div{
+#tab div {
   margin: 1em;
   cursor: pointer;
   padding: 6px;
 }
 
-#tab div:hover{
-  background-color: azure;
-  padding: 6px;
-  border-radius: 30px;
+#tab div:active {
+  /* background-color: azure; */
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 /* #tab div:checked{
   background-color: tomato;
 } */
 
-.set-list{
+.set-list {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dashed black;
+  align-items: center;
+
   padding: 10px;
+  width: 100%;
+
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.set-list button:first-child{
+.set-list button:first-child {
   padding: 5px;
-  background-color: beige;
+  /* background-color: beige; */
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  background-color: #f2f2f2;
 }
 
-.set-list button:nth-child(2){
+.set-list button:nth-child(2) {
   padding: 5px;
-  background-color: tomato;
+  /* background-color: tomato; */
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 5px;
+  border: none;
 }
 
-.set-list button:hover{
-  background-color: thistle;
+.set-list button:hover {
+  /* background-color: thistle; */
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
 }
 
-.line-through{
+.line-through {
   text-decoration: line-through;
 }

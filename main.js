@@ -54,8 +54,8 @@ function render() {
       ${list[i].todoValue}
       </div>
       <div>
-      <button onclick="doneKey('${list[i].id}')">다 했음</button>
-      <button onclick="deleteKey('${list[i].id}')">삭제</button>
+      <button onclick="doneKey('${list[i].id}')">Done</button>
+      <button onclick="deleteKey('${list[i].id}')">Delete</button>
       </div>
       </div>`;
     } else {
@@ -65,8 +65,8 @@ function render() {
       ${list[i].todoValue}
       </div>
       <div>
-      <button onclick="doneKey('${list[i].id}')">다 했음</button>
-      <button onclick="deleteKey('${list[i].id}')">삭제</button>
+      <button onclick="doneKey('${list[i].id}')">Done</button>
+      <button onclick="deleteKey('${list[i].id}')">Delete</button>
       </div>
       </div>`;
     }
